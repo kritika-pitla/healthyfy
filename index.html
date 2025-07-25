@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Healthyfy</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Healthyfy 🍲</h1>
+    <p>A simple food guide for better health.</p>
+
+    <form id="healthForm">
+      <input type="text" id="name" placeholder="Enter your name" required />
+      <input type="number" id="age" placeholder="Enter your age" required />
+      
+      <select id="condition" required>
+        <option value="">--Select Health Condition--</option>
+        <option value="diabetes">Diabetes</option>
+        <option value="thyroid">Thyroid</option>
+        <option value="bp">Blood Pressure</option>
+        <option value="arthritis">Arthritis</option>
+        <option value="hearing">Hearing Loss</option>
+      </select>
+      <button type="submit">Get Recommendations</button>
+    </form>
+
+    <div id="recommendations"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
